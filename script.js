@@ -45,7 +45,7 @@ let nextDirection = { x: 1, y: 0 };
 let enemyTarget = null;
 let enemySpeedBoost = 0;
 let score = 0;
-let best = Number(localStorage.getItem("spunky-best") || 0);
+let best = Number(sessionStorage.getItem("spunky-best") || 0);
 let gameOver = false;
 let paused = false;
 let lastTime = 0;
@@ -251,7 +251,7 @@ function update(dt) {
   if (Math.hypot(player.x - enemy.x, player.y - enemy.y) < player.r + enemy.r + 4) {
     gameOver = true;
     best = Math.max(best, score);
-    localStorage.setItem("spunky-best", String(best));
+    sessionStorage.setItem("spunky-best", String(best));
     bestEl.textContent = best;
     statusEl.textContent = "Caught. Restart and run it back.";
   }
