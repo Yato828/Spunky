@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPUNKY on Solana</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="logo" href="#top" aria-label="SPUNKY">
+        <img src="assets/spunky-king-contour.png" alt="" />
+        <span>SPUNKY</span>
+      </a>
+      <nav class="nav" aria-label="Project links">
+        <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
+        <a href="https://t.me/" target="_blank" rel="noreferrer">TG</a>
+        <a href="https://dexscreener.com/" target="_blank" rel="noreferrer">DEX</a>
+        <a href="https://pump.fun/" target="_blank" rel="noreferrer">Pump.fun</a>
+        <a class="buy" href="https://pump.fun/" target="_blank" rel="noreferrer">Buy Now</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-scene" aria-hidden="true">
+          <div class="maze-track track-a"></div>
+          <div class="maze-track track-b"></div>
+          <div class="maze-track track-c"></div>
+          <div class="maze-track track-d"></div>
+          <img class="scene-coin coin-a" src="assets/solana-coin.png" alt="" />
+          <img class="scene-coin coin-b" src="assets/solana-coin.png" alt="" />
+          <img class="scene-coin coin-c" src="assets/solana-coin.png" alt="" />
+          <div class="pac-runner"></div>
+        </div>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <span class="tag">Solana arcade chase</span>
+            <h1>SPUNKY</h1>
+            <p class="hero-note">Run the maze, grab the coins, dodge the royal chase.</p>
+            <div class="actions">
+              <a class="button main" href="https://pump.fun/" target="_blank" rel="noreferrer">Buy Now</a>
+              <a class="button ghost" href="#game">Play</a>
+            </div>
+          </div>
+
+          <div class="character-frame" aria-hidden="true">
+            <div class="frame-corner corner-a"></div>
+            <div class="frame-corner corner-b"></div>
+            <img class="portrait-img" src="assets/spunky-king-contour.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="SPUNKY stats">
+        <span>$SPUNKY</span>
+        <span>Chain: Solana</span>
+        <span>Buy tax: 0%</span>
+        <span>Sell tax: 0%</span>
+        <span>Links are placeholders</span>
+      </section>
+
+      <section class="tokenomics" id="tokenomics">
+        <div class="section-title">
+          <span class="tag">Tokenomics</span>
+          <h2>Dark maze, fast chase, clean ticker.</h2>
+        </div>
+        <div class="stats">
+          <article><small>Ticker</small><strong>$SPUNKY</strong></article>
+          <article><small>Chain</small><strong>Solana</strong></article>
+          <article><small>Taxes</small><strong>0%</strong></article>
+          <article><small>Style</small><strong>Chase</strong></article>
+        </div>
+      </section>
+
+      <section class="game-wrap" id="game">
+        <div class="game-title">
+          <span class="tag">Mini game</span>
+          <h2>Grab the Solana coins before Spunky catches you.</h2>
+        </div>
+        <div class="game-layout">
+          <aside class="game-side">
+            <img src="assets/spunky-king-contour.png" alt="" />
+            <div class="scoreline"><span>Score</span><strong id="score">0</strong></div>
+            <div class="scoreline"><span>Best</span><strong id="best">0</strong></div>
+            <button id="pause" type="button">Pause</button>
+            <button id="restart" type="button">Restart</button>
+            <p id="gameStatus">Spunky is hunting.</p>
+          </aside>
+          <canvas id="maze" width="720" height="520" aria-label="SPUNKY chase game"></canvas>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>SPUNKY / SOLANA / 0% TAX</span>
+      <img src="assets/solana-coin.png" alt="" />
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
